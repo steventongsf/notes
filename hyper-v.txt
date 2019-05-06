@@ -1,0 +1,2 @@
+# Add RemoteFX Video Adapter to a VM
+Add-VMRemoteFx3dVideoAdapter -VMName <MyVM>
