@@ -1,2 +1,5 @@
 # Add RemoteFX Video Adapter to a VM
 Add-VMRemoteFx3dVideoAdapter -VMName <MyVM>
+
+# change resolution in Hyper-V Ubuntu VM
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=hyperv_fb:1280x720"
