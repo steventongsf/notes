@@ -1,0 +1,32 @@
+$ gpg --gen-key
+gpg (GnuPG) 2.2.13-unknown; Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Note: Use "gpg --full-generate-key" for a full featured key generation dialog.
+
+GnuPG needs to construct a user ID to identify your key.
+
+Real name: Steven Tong
+Email address: steventongsf@gmail.com
+You selected this USER-ID:
+    "Steven Tong <steventongsf@gmail.com>"
+
+Change (N)ame, (E)mail, or (O)kay/(Q)uit? O
+
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: key CB299FEEF7DF326F marked as ultimately trusted
+gpg: directory '/c/Users/steve/.gnupg/openpgp-revocs.d' created
+gpg: revocation certificate stored as '/c/Users/steve/.gnupg/openpgp-revocs.d/140F3218BEFEF2EBBB0CC8D1CB299FEEF7DF326F.rev'
+public and secret key created and signed.
+
+pub   rsa2048 2019-11-27 [SC] [expires: 2021-11-26]
+      140F3218BEFEF2EBBB0CC8D1CB299FEEF7DF326F
+uid                      Steven Tong <steventongsf@gmail.com>
+sub   rsa2048 2019-11-27 [E] [expires: 2021-11-26]
