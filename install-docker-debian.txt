@@ -1,0 +1,5 @@
+    1  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    2  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    3  sudo apt-get update
+    4  sudo apt-get install -y docker-ce
+    5  sudo systemctl status docker
