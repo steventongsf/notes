@@ -1,0 +1,11 @@
+# Discover live IP addresses
+nmap  -sP 192.168.10.0/24
+
+# nmap with ip range
+nmap  192.168.10.100-230
+
+# Detect OS and Services Running in a subnet
+nmap  -A 192.168.10.0/24
+
+# scan all ports in ip range
+nmap  -p 1-65535 192.168.10.0/24
