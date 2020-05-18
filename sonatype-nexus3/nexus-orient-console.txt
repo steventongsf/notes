@@ -1,2 +1,19 @@
 # Start console
 java -jar ./lib/support/nexus-orient-console.jar
+
+# connect to 1 of 3 dbs
+> CONNECT PLOCAL:${your_install_dir}/sonatype-work/nexus3/db/component admin admin
+
+# repair database
+> REBUILD INDEX *
+> REPAIR DATABASE --fix-graph
+> REPAIR DATABASE --fix-links
+> REPAIR DATABASE --fix-ridbags
+> REPAIR DATABASE --fix-bonsai
+> DISCONNECT
+
+# backup and restore a database
+export database component-export
+drop database
+create database plocal:/nexus-data/db/component
+import database component-export.json.gz
