@@ -1,0 +1,2 @@
+# Start console
+java -jar ./lib/support/nexus-orient-console.jar
