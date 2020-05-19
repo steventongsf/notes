@@ -1,0 +1,10 @@
+# generate self-signed cert
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
+
+# generate diffie-hellman group
+sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+
+# append to cert
+sudo cat dhparam.pem | tee -a apache-selfsigned.crt
+
+# configure conf.d/ssl.conf
