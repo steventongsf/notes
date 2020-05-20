@@ -17,3 +17,7 @@ export database component-export
 drop database
 create database plocal:/nexus-data/db/component
 import database component-export.json.gz
+
+
+# check database
+check database
