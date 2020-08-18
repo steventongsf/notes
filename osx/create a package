@@ -1,0 +1,9 @@
+# create a package
+echo "#!/bin/sh\nexit 0;\n" > scripts/preinstall
+echo "#!/bin/sh\nexit 0;\n" > scripts/postinstall
+chmod +x scripts/*
+
+pkgbuild --root payload --install-location "" --identifier com.stong.myapp --scripts scripts --version 1 myapp.pkg
+
+# view contents
+pkgutils --expand myapp.pkg out
